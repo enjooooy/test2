@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>اختبار الوحدة الثانية: دورة الخلية وتصنيع البروتينات</title>
+  <style>
+    /* عام */
+    :root{
+      --main-font: "Noto Naskh Arabic", "Helvetica Neue", Arial, sans-serif;
+      --q-font-size: 19px;
+      --opt-font-size: 17px;
+      --line-gap: 1.6;
+      --wide: 980px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap');
+
+    html,body{
+      height:100%;
+      margin:0;
+      padding:20px;
+      background:#f3f6f8;
+      font-family: var(--main-font);
+      direction: rtl;
+      text-align: right;
+      color:#111;
+    }
+
+    .page{
+      max-width:var(--wide);
+      margin:0 auto;
+      background:#fff;
+      padding:28px 36px;
+      box-shadow:0 6px 22px rgba(0,0,0,0.06);
+      border-radius:8px;
+    }
+
+    h1{
+      font-size:30px;
+      margin:0 0 6px 0;
+    }
+    p.lead{
+      margin:6px 0 18px 0;
+      color:#444;
+    }
+
+    ol.questions{
+      counter-reset: q;
+      padding:0;
+      margin:0;
+    }
+
+    li.q{
+      list-style:none;
+      margin:16px 0;
+      padding:12px 14px;
+      border-radius:6px;
+      background:linear-gradient(180deg,#ffffff,#fcfdff);
+      border:1px solid #eef2f5;
+    }
+
+    .qtext{
+      display:block;
+      font-size:var(--q-font-size);
+      line-height:var(--line-gap);
+      margin-bottom:8px;
+      font-weight:600;
+    }
+
+    .opts{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      margin-top:6px;
+    }
+
+    .opt{
+      font-size:var(--opt-font-size);
+      padding:8px 10px;
+      border-radius:6px;
+      border:1px solid #e6eef2;
+      background:#fff;
+    }
+
+    .opt span.label{
+      display:inline-block;
+      min-width:36px;
+      text-align:center;
+      background:#f0f6fb;
+      border-radius:4px;
+      padding:2px 6px;
+      margin-left:10px;
+      font-weight:700;
+    }
+
+    /* طباعة */
+    @media print{
+      body{padding:0; background:#fff}
+      .page{box-shadow:none; border:none; margin:0; border-radius:0; width:100%}
+      .opt{page-break-inside:avoid}
+    }
+
+    /* استجابة */
+    @media (max-width:720px){
+      :root{--q-font-size:17px; --opt-font-size:15px; --wide:100%}
+      .page{padding:16px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>اختبار الوحدة الثانية: دورة الخلية وتصنيع البروتينات</h1>
+    <p class="lead">ضع دائرة حول الحرف الصحيح (أ، ب، ج، د). يغطي الاختبار كل أجزاء الوحدة: دورة الخلية، الانقسام الخلوي، تضاعف DNA، التعبير الجيني وتصنيع البروتينات (النسخ، المعالجة، الترجمة) والمواضيع ذات الصلة.</p>
+
+    <ol class="questions">
+      <!-- 1 -->
+      <li class="q">
+        <div class="qtext">1. أي طور من دورة الخلية يتضمن تضاعف DNA؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> G1</div>
+          <div class="opt"><span class="label">ب</span> S</div>
+          <div class="opt"><span class="label">ج</span> G2</div>
+          <div class="opt"><span class="label">د</span> M</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">2. وظيفة الإنزيم هيليكاز أثناء تضاعف الـ DNA هي:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> ربط النوكليوتيدات الجديدة</div>
+          <div class="opt"><span class="label">ب</span> فك خيوط الـ DNA المزدوجة</div>
+          <div class="opt"><span class="label">ج</span> ملء الفراغات بين الشظايا</div>
+          <div class="opt"><span class="label">د</span> صنع المِرحَلة (primer)</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">3. أي إنزيم يقوم بصنع القِرن الأولي (primer) على قالب الـ DNA؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> DNA بوليميراز I</div>
+          <div class="opt"><span class="label">ب</span> هيليكاز</div>
+          <div class="opt"><span class="label">ج</span> بريماز (Primase)</div>
+          <div class="opt"><span class="label">د</span> لايجاز (Ligase)</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">4. شظايا أوكازيكي (Okazaki fragments) تتكوّن على أي سلسلة خلال تضاعف الـ DNA؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> السلسلة الرائدة (Leading)</div>
+          <div class="opt"><span class="label">ب</span> السلسلة المتخلفة (Lagging)</div>
+          <div class="opt"><span class="label">ج</span> كلاهما</div>
+          <div class="opt"><span class="label">د</span> لا تتكوّن شظايا أبداً</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">5. أي إنزيم يربط بين شظايا أوكازيكي لإكمال السلسلة؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> DNA بوليميراز III</div>
+          <div class="opt"><span class="label">ب</span> بريماز</div>
+          <div class="opt"><span class="label">ج</span> لايجاز (Ligase)</div>
+          <div class="opt"><span class="label">د</span> هيليكاز</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">6. الدور التصحيحي proof-reading عادةً ينفّذه:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> DNA بوليميراز مع نشاط إكسونوكلياز</div>
+          <div class="opt"><span class="label">ب</span> هيليكاز</div>
+          <div class="opt"><span class="label">ج</span> لايجاز</div>
+          <div class="opt"><span class="label">د</span> بريماز</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">7. ما وظيفة التيلومير (telomere)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> بدء تضاعف الـ DNA</div>
+          <div class="opt"><span class="label">ب</span> حماية نهايات الكروموسوم من الفقد</div>
+          <div class="opt"><span class="label">ج</span> فصل الكروموسومات أثناء الانقسام</div>
+          <div class="opt"><span class="label">د</span> ربط الأنيبيبات المغزلية</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">8. إنزيم التيلوميراز يعمل على:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> قص التيلوميرات</div>
+          <div class="opt"><span class="label">ب</span> إضافة تكرارات DNA إلى نهايات الكروموسومات</div>
+          <div class="opt"><span class="label">ج</span> فصل الأختلافات بين الكروماتيدات</div>
+          <div class="opt"><span class="label">د</span> تعطيل الجينات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">9. أي طور من الميتوسيس تتفكك فيه الغلاف النووي؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> الطور التمهيدي (Prophase)</div>
+          <div class="opt"><span class="label">ب</span> الطور الاستوائي (Metaphase)</div>
+          <div class="opt"><span class="label">ج</span> الطور الانفصالي (Anaphase)</div>
+          <div class="opt"><span class="label">د</span> الطور النهائي (Telophase)</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">10. في أي طور من الميتوسيس ترتب الكروموسومات على صفاد استوائي؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> Prophase</div>
+          <div class="opt"><span class="label">ب</span> Metaphase</div>
+          <div class="opt"><span class="label">ج</span> Anaphase</div>
+          <div class="opt"><span class="label">د</span> Telophase</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">11. فصل الكروماتيدات الشقيقتين إلى أقطاب متعاكسة يحدث في:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> الميتوسيس: Anaphase</div>
+          <div class="opt"><span class="label">ب</span> الانقسام الخيطي</div>
+          <div class="opt"><span class="label">ج</span> الطور التمهيدي</div>
+          <div class="opt"><span class="label">د</span> الطور البيني</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">12. وظيفة نقطة التفتيش (checkpoint) في دورة الخلية هي:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تسريع الانقسام</div>
+          <div class="opt"><span class="label">ب</span> التحقق من سلامة الـ DNA واكتمال المراحل قبل التقدم</div>
+          <div class="opt"><span class="label">ج</span> تعطيل البروتينات</div>
+          <div class="opt"><span class="label">د</span> إنتاج ATP</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">13. الجزيئات البروتينية المسؤولة عن التحكم في نقاط التفتيش تسمى عادةً:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> هيستونات</div>
+          <div class="opt"><span class="label">ب</span> سيكلينات (Cyclins) و CDKs</div>
+          <div class="opt"><span class="label">ج</span> إنزيمات هضمية</div>
+          <div class="opt"><span class="label">د</span> بوليميرات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">14. أي مما يلي يمكن أن يؤدي إلى غزو الخلايا السرطانية؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> فقدان التحكم في نقاط التفتيش ودورة الخلية</div>
+          <div class="opt"><span class="label">ب</span> تعزيز نشاط التيلوميراز في كل الخلايا</div>
+          <div class="opt"><span class="label">ج</span> زيادة إنتاج البروتينات البنيوية فقط</div>
+          <div class="opt"><span class="label">د</span> تقليل نشاط الـ ATP</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">15. أي نوع من الانقسام يؤدي إلى إنتاج أمشاج (gametes)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> الميتوسيس</div>
+          <div class="opt"><span class="label">ب</span> الميوزيس</div>
+          <div class="opt"><span class="label">ج</span> الانقسام البنائي</div>
+          <div class="opt"><span class="label">د</span> انقسام السيتوبلازم</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">16. في أي مرحلة من الميوزيس يحدث التبادل الجيني (crossing-over) بين الكروماتيدات؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> Prophase I</div>
+          <div class="opt"><span class="label">ب</span> Metaphase I</div>
+          <div class="opt"><span class="label">ج</span> Anaphase I</div>
+          <div class="opt"><span class="label">د</span> Telophase II</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">17. حالة عدم انفصال الكروموسومات أو الكروماتيدات تسمى:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> nondisjunction</div>
+          <div class="opt"><span class="label">ب</span> deletion</div>
+          <div class="opt"><span class="label">ج</span> inversion</div>
+          <div class="opt"><span class="label">د</span> translocation</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">18. تضاعف الـ DNA في الخلايا الحقيقية النوى يحدث في أي مكان داخل الخلية؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> في النواة</div>
+          <div class="opt"><span class="label">ب</span> في الميتوكوندريا فقط</div>
+          <div class="opt"><span class="label">ج</span> في السيتوبلازم</div>
+          <div class="opt"><span class="label">د</span> على غشاء الخلية</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">19. السلسلة الرائدة (leading strand) تُركّب بطريقة:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> مستمرة في اتجاه 5' → 3'</div>
+          <div class="opt"><span class="label">ب</span> متقطعة</div>
+          <div class="opt"><span class="label">ج</span> عكسية</div>
+          <div class="opt"><span class="label">د</span> دون تركيب</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">20. أي مما يلي يصف أفضل عملية النسخ (Transcription)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تصنيع DNA من قالب RNA</div>
+          <div class="opt"><span class="label">ب</span> تصنيع RNA من قالب DNA</div>
+          <div class="opt"><span class="label">ج</span> تصنيع البروتين من RNA</div>
+          <div class="opt"><span class="label">د</span> تضاعف RNA</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">21. في حقيقيات النوى أي إنزيم يقوم بالنسخ؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> DNA بوليميراز</div>
+          <div class="opt"><span class="label">ب</span> RNA بوليميراز II (لـ mRNA)</div>
+          <div class="opt"><span class="label">ج</span> ريبوزوم</div>
+          <div class="opt"><span class="label">د</span> توبويزوميراز</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">22. المشغل (promoter) هو منطقة في الجين تعمل على:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> إنهاء النسخ</div>
+          <div class="opt"><span class="label">ب</span> بدء ارتباط RNA بوليميراز وبدء النسخ</div>
+          <div class="opt"><span class="label">ج</span> ربط الأحماض الأمينية</div>
+          <div class="opt"><span class="label">د</span> فك الـ DNA</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">23. أي من التالي يضاف إلى طرف الـ mRNA في حقيقيات النوى بعد النسخ مباشرة؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> ذيل بولي-أ (poly-A tail) وغطاء 5' (5' cap)</div>
+          <div class="opt"><span class="label">ب</span> شظايا أوكازيكي</div>
+          <div class="opt"><span class="label">ج</span> تيلوميرات</div>
+          <div class="opt"><span class="label">د</span> رابطة ببتيدية</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">24. عملية إزالة الإنترونات وضم الإكسونات تُسمى:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> ترجمة</div>
+          <div class="opt"><span class="label">ب</span> تضاعف</div>
+          <div class="opt"><span class="label">ج</span> splicing (الطي/التقطيع و الربط)</div>
+          <div class="opt"><span class="label">د</span> طي البروتين</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">25. أي من التالي يمثل الكودون الابتدائي (start codon) عادةً؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> UAA</div>
+          <div class="opt"><span class="label">ب</span> AUG</div>
+          <div class="opt"><span class="label">ج</span> UGA</div>
+          <div class="opt"><span class="label">د</span> UAG</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">26. أي من التالي يمثل كودون إنهاء (stop codon)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> AUG</div>
+          <div class="opt"><span class="label">ب</span> UUU</div>
+          <div class="opt"><span class="label">ج</span> UAA</div>
+          <div class="opt"><span class="label">د</span> GGG</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">27. موقع الريبوسوم الذي يستقبل الحمض الأميني القادم يُسمّى:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> موقع P</div>
+          <div class="opt"><span class="label">ب</span> موقع A</div>
+          <div class="opt"><span class="label">ج</span> موقع E</div>
+          <div class="opt"><span class="label">د</span> موقع S</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">28. وظيفة tRNA هي:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> حمل الشيفرة من النواة</div>
+          <div class="opt"><span class="label">ب</span> حمل الأحماض الأمينية إلى الريبوسوم</div>
+          <div class="opt"><span class="label">ج</span> تركيب الـ DNA</div>
+          <div class="opt"><span class="label">د</span> إنتاج ATP</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">29. أي مرحلة من تركيب البروتين تحدث فيها ربط الأحماض الأمينية بتسلسل؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> النسخ</div>
+          <div class="opt"><span class="label">ب</span> الطي</div>
+          <div class="opt"><span class="label">ج</span> الترجمة</div>
+          <div class="opt"><span class="label">د</span> الطرد</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">30. ماذا يحدث في الترجمة عند وصول ريبوزوم لكودون وقف؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> يستمر تركيب البروتين</div>
+          <div class="opt"><span class="label">ب</span> يرتبط عامل تحرير (release factor) وينهي الترجمة</div>
+          <div class="opt"><span class="label">ج</span> يبدأ النسخ</div>
+          <div class="opt"><span class="label">د</span> يرتبط tRNA حملًا لسليلة جديدة</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">31. أي مما يلي يحدث بعد الترجمة عادةً (post-translational modification)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> إضافة فسفات أو مجموعة هيدروكسيل أو قطع بوليببتيدي</div>
+          <div class="opt"><span class="label">ب</span> إزالة الشيفرة من mRNA</div>
+          <div class="opt"><span class="label">ج</span> تضاعف الـ DNA</div>
+          <div class="opt"><span class="label">د</span> تكرار الشيفرة</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">32. البروتينات الشاردية (chaperones) دورها:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> فك شريط الـ DNA</div>
+          <div class="opt"><span class="label">ب</span> مساعدة البروتينات على الطي الصحيح</div>
+          <div class="opt"><span class="label">ج</span> نقل الأحماض الأمينية</div>
+          <div class="opt"><span class="label">د</span> تركيب الرنا المرسال</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">33. الطفرة التي تغير نيوكليوتيدًا واحدًا فقط تسمى:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> frameshift</div>
+          <div class="opt"><span class="label">ب</span> point mutation</div>
+          <div class="opt"><span class="label">ج</span> deletion كبيرة</div>
+          <div class="opt"><span class="label">د</span> duplication</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">34. طفرة إزاحة الإطار (frameshift) عادةً تنتج عن:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> استبدال نيوكليوتيد واحد</div>
+          <div class="opt"><span class="label">ب</span> حذف أو إدراج نيوكليوتيد واحد أو أكثر</div>
+          <div class="opt"><span class="label">ج</span> تكرار كروموسومي كامل</div>
+          <div class="opt"><span class="label">د</span> تغيير في التيلوميرات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">35. أي مما يلي من أسباب الطفرات؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> أخطاء تضاعف الـ DNA، مؤثرات كيميائية أو إشعاعية</div>
+          <div class="opt"><span class="label">ب</span> زيادة نشاط التيلوميراز فقط</div>
+          <div class="opt"><span class="label">ج</span> نقص في البروتينات البنيوية</div>
+          <div class="opt"><span class="label">د</span> تناول كميات كبيرة من الماء</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">36. أي آلية تصحيح DNA تزيل قاعدة خاطئة وتضمّن قاعدة صحيحة؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> إصلاح عدم التطابق (Mismatch repair)</div>
+          <div class="opt"><span class="label">ب</span> إصلاح انكسار السلسلة المزدوجة</div>
+          <div class="opt"><span class="label">ج</span> splicing</div>
+          <div class="opt"><span class="label">د</span> طي البروتين</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">37. أي وصف أدق للـ exon؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> جزء من الجين يُحذف أثناء المعالجة</div>
+          <div class="opt"><span class="label">ب</span> جزء من الجين يبقى في الـ mRNA النهائي ويُترجم</div>
+          <div class="opt"><span class="label">ج</span> بروتين مساعد</div>
+          <div class="opt"><span class="label">د</span> موقع ربط الـ ribosome</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">38. التعبير الجيني يتم تنظيمه عند مستويات متعددة، أيّها من المستويات التالية يُعدُّ وسيلة تنظيم؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تنظيم النسخ، التنظيم بعد النسخ، التنظيم بعد الترجمة</div>
+          <div class="opt"><span class="label">ب</span> فقط تنظيم النسخ</div>
+          <div class="opt"><span class="label">ج</span> تنظيم التسلسل النووي فقط</div>
+          <div class="opt"><span class="label">د</span> تنظيم الغشاء البلازمي فقط</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">39. أي من التالي صحيح بالنسبة للـ operon في البكتيريا؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> مجموعة من الجينات التي تُنظّم وتُنقَل كوحدة واحدة</div>
+          <div class="opt"><span class="label">ب</span> نظام موجود فقط في حقيقيات النوى</div>
+          <div class="opt"><span class="label">ج</span> لا تحتوي على مشغلات</div>
+          <div class="opt"><span class="label">د</span> لا تتأثر بالمثبطات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">40. أي العبارة تصف بشكل صحيح الجين المسؤول عن tumour suppressor؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> جين يساعد على نمو الخلية غير المنضبط إذا نُشط</div>
+          <div class="opt"><span class="label">ب</span> جين يثبط تكاثر الخلايا، وفقدانه قد يسبب سرطان</div>
+          <div class="opt"><span class="label">ج</span> جين لا علاقة له بالانقسام الخلوي</div>
+          <div class="opt"><span class="label">د</span> جين يُفعّل النسخ فقط</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">41. أي من التالي يُعدّ محرضًا (inducer) في نظام lac operon؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> لاكتوز أو مشتقاته</div>
+          <div class="opt"><span class="label">ب</span> الجلوكوز</div>
+          <div class="opt"><span class="label">ج</span> ATP</div>
+          <div class="opt"><span class="label">د</span> الحمض النووي الريبوزي</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">42. أي مما يلي يصف أفضل آلية عمل الـ promoter القوي؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> لا يجذب RNA بوليميراز</div>
+          <div class="opt"><span class="label">ب</span> يجذب RNA بوليميراز بكفاءة عالية ويزيد من معدل النسخ</div>
+          <div class="opt"><span class="label">ج</span> يقع داخل الإكسون فقط</div>
+          <div class="opt"><span class="label">د</span> يمنع الترجمة</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">43. البدائل في الترجمة (wobble) في قاعدة الـ tRNA تسمح بـ:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> مزيد من المرونة في اقتران الكودونات في الموضع الثالث</div>
+          <div class="opt"><span class="label">ب</span> توقف الترجمة</div>
+          <div class="opt"><span class="label">ج</span> زيادة الأخطاء فقط</div>
+          <div class="opt"><span class="label">د</span> تعطيل المشغل</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">44. أي من التالي يصف بشكل صحيح الفرق بين الـ DNA بوليميراز في البكتيريا وحقيقيات النوى؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> لا تختلف على الإطلاق</div>
+          <div class="opt"><span class="label">ب</span> تختلف في الأنواع والوظائف وعدد الإنزيمات المشاركة</div>
+          <div class="opt"><span class="label">ج</span> تؤدي نفس الدور في كلتا الحالتين دون أي نشاط تصحيحي</div>
+          <div class="opt"><span class="label">د</span> حقيقيات النوى لا تمتلك DNA بوليميراز</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">45. أين يتم ربط الأحماض الأمينية بالـ tRNA؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> عند الطرف 5' من tRNA</div>
+          <div class="opt"><span class="label">ب</span> عند الطرف 3' من tRNA</div>
+          <div class="opt"><span class="label">ج</span> في منتصف الجزيء</div>
+          <div class="opt"><span class="label">د</span> لا ترتبط الأحماض الأمينية بالـ tRNA</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">46. عملية "التعبير الجيني الخامل" في الخلايا المتمايزة تُسمى:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> التفعيل</div>
+          <div class="opt"><span class="label">ب</span> السكون الجيني (gene silencing)</div>
+          <div class="opt"><span class="label">ج</span> الطفرة</div>
+          <div class="opt"><span class="label">د</span> النسخ المعجل</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">47. أي من التالي يساهم في تنظيم التعبير الجيني في حقيقيات النوى عن طريق تعديل الكروماتين؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تعديل الهيستونات مثل الإيثلة والفوسفرة والأسيتلة</div>
+          <div class="opt"><span class="label">ب</span> تغيير تسلسل القواعد مباشرة</div>
+          <div class="opt"><span class="label">ج</span> تكسير البروتينات</div>
+          <div class="opt"><span class="label">د</span> تعديل الـ tRNA فقط</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">48. أي من التالي يمثل دور الـ spliceosome؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تضاعف الـ DNA</div>
+          <div class="opt"><span class="label">ب</span> إزالة الإنترونات من الـ pre-mRNA</div>
+          <div class="opt"><span class="label">ج</span> إضافة ذيل poly-A</div>
+          <div class="opt"><span class="label">د</span> ربط الأحماض الأمينية</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">49. ماذا تعني "تعبير جيني بديل" (alternative splicing)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> إنتاج نسخ mRNA مختلفة من نفس الجين عن طريق ضم إكسونات مختلفة</div>
+          <div class="opt"><span class="label">ب</span> حذف الجين بالكامل</div>
+          <div class="opt"><span class="label">ج</span> تعدد التيلوميرات</div>
+          <div class="opt"><span class="label">د</span> تبديل بين DNA و RNA</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">50. أي وصف أدق لمرحلة G0؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> مرحلة النمو قبل تضاعف الـ DNA</div>
+          <div class="opt"><span class="label">ب</span> مرحلة الخروج من دورة الخلية حيث تكون الخلية غير منقسمة غالبًا</div>
+          <div class="opt"><span class="label">ج</span> طور الطور الانفصالي</div>
+          <div class="opt"><span class="label">د</span> طور انتاج البروتين فقط</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">51. أي من التالي ليس وظيفة للـ DNA بوليميراز؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تركيب سلسلة جديدة 5' → 3'</div>
+          <div class="opt"><span class="label">ب</span> proof-reading (تصحيح)</div>
+          <div class="opt"><span class="label">ج</span> إزالة الـ introns</div>
+          <div class="opt"><span class="label">د</span> ملء الفراغات بعد استبدال الشظايا</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">52. أي مما يلي يصف أفضل دور الـ promoter وenhancer معًا؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> كلاهما يُثبّط النسخ</div>
+          <div class="opt"><span class="label">ب</span> يعملان كمناطق وُصول لعوامل النسخ؛ enhancer يزيد من معدل النسخ حتى لو كان بعيدًا</div>
+          <div class="opt"><span class="label">ج</span> يعملان فقط في البكتيريا</div>
+          <div class="opt"><span class="label">د</span> يمنعان الترجمة</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">53. أي من التالي صحيح عن العوامل النسخية (transcription factors)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> ترتبط بالـ ribosome فقط</div>
+          <div class="opt"><span class="label">ب</span> تساعد في جذب RNA بوليميراز إلى المشغّل</div>
+          <div class="opt"><span class="label">ج</span> تصنع الأحماض الأمينية</div>
+          <div class="opt"><span class="label">د</span> تقوم بإزالة الإنترونات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">54. ما تأثير مثبط الـ proteasome في الخلية؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> زيادة تحلل البروتينات</div>
+          <div class="opt"><span class="label">ب</span> منع تحلل البروتينات المُعلّمة باليوبيكويتين مما قد يؤثر على دور دورة الخلية</div>
+          <div class="opt"><span class="label">ج</span> تضاعف الـ DNA</div>
+          <div class="opt"><span class="label">د</span> تكوين التيلوميرات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">55. أي من التالي يصف البدء في تضاعف الـ DNA عند مواقع متعددة على الكروموسوم؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> يحدث في البكتيريا فقط</div>
+          <div class="opt"><span class="label">ب</span> يحدث في حقيقيات النوى في مواقع البداية المتعددة (origins of replication)</div>
+          <div class="opt"><span class="label">ج</span> لا يحدث في خلايا حقيقية النوى</div>
+          <div class="opt"><span class="label">د</span> يحدث فقط خلال الانقسام الاختزالي</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">56. أي مما يلي يوضح الفرق بين الكروماتين المتمدد (euchromatin) والكروماتين المكثف (heterochromatin)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> الكروماتين المتمدد نشط من حيث التعبير الجيني؛ المكثف خامد</div>
+          <div class="opt"><span class="label">ب</span> المكثف يعبر عنه أكثر</div>
+          <div class="opt"><span class="label">ج</span> لا يوجد فرق وظيفي</div>
+          <div class="opt"><span class="label">د</span> المتمدد يوجد فقط في النبات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">57. أي جملة صحيحة عن الـ Okazaki fragments في خلايا حقيقية النوى مقارنة بالبكتيريا؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> أطوالها مشابهة دائمًا</div>
+          <div class="opt"><span class="label">ب</span> في حقيقيات النوى عادة تكون أقصر بسبب اختلاف البروتينات المشاركة</div>
+          <div class="opt"><span class="label">ج</span> لا تُكوّن في حقيقيات النوى</div>
+          <div class="opt"><span class="label">د</span> تُدمَر تمامًا فور تكوّنها</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">58. أي مما يلي يصف دور الـ origin recognition complex (ORC)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> يُعرف مواقع بداية التضاعف في حقيقيات النوى</div>
+          <div class="opt"><span class="label">ب</span> يفك الـ DNA</div>
+          <div class="opt"><span class="label">ج</span> يربط الأحماض الأمينية</div>
+          <div class="opt"><span class="label">د</span> يعمل كمشغّل في البكتيريا</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">59. أي مما يلي يُعدُّ مثالًا على تعديل ما بعد النسخ (post-transcriptional modification)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> إضافة 5' cap</div>
+          <div class="opt"><span class="label">ب</span> تكرار DNA</div>
+          <div class="opt"><span class="label">ج</span> فك الهيستونات</div>
+          <div class="opt"><span class="label">د</span> ربط الريبوزوم</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">60. أي من التالي قد يؤدي إلى توقف تقدم الخلية من الطور G1 إلى الطور S؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تلف كبير في الـ DNA</div>
+          <div class="opt"><span class="label">ب</span> زيادة في مخزون الغلوكوز</div>
+          <div class="opt"><span class="label">ج</span> زيادة عدد الريبوسومات</div>
+          <div class="opt"><span class="label">د</span> تضاعف الـ DNA بالفعل</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">61. أي من التالي يصف أفضل وظيفة لِمراكز التحكم (centrosomes) أثناء الانقسام؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> توليد الأنيبيبات الدقيقة للمغزل (spindle microtubules)</div>
+          <div class="opt"><span class="label">ب</span> تضاعف الـ DNA</div>
+          <div class="opt"><span class="label">ج</span> ربط الـ mRNA</div>
+          <div class="opt"><span class="label">د</span> طي البروتين</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">62. ما نتيجة حدوث انقلاب (inversion) لقطعة من الكروموسوم؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> حذف الكروموسوم كاملاً</div>
+          <div class="opt"><span class="label">ب</span> انعكاس ترتيب الجينات في جزء من الكروموسوم وقد يؤثر في التعبير الجيني</div>
+          <div class="opt"><span class="label">ج</span> تضاعف التيلوميرات</div>
+          <div class="opt"><span class="label">د</span> إنتاج أمشاج إضافية</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">63. أي الآتي يصف بروتينات Rb و p53؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> عوامل انقسام تحفِّز تقدم الخلية</div>
+          <div class="opt"><span class="label">ب</span> جينات مكبحة للأورام تعمل كنقاط تفتيش</div>
+          <div class="opt"><span class="label">ج</span> هيستونات</div>
+          <div class="opt"><span class="label">د</span> إنزيمات تضاعف</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">64. في تصنيع البروتين، ما الذي يضمن أن الحمض الأميني الصحيح يضاف في كل مرة؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> قواعد الـ mRNA فقط</div>
+          <div class="opt"><span class="label">ب</span> إنزيمات الـ aminoacyl-tRNA synthetases التي تشحن الـ tRNA الصحيح بالأحماض الأمينية المناسبة</div>
+          <div class="opt"><span class="label">ج</span> الريبوزوم فقط</div>
+          <div class="opt"><span class="label">د</span> مشغلات الجينات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">65. ما المقصود بـ "التمايز الخلوي"؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> عملية تضاعف الـ DNA فقط</div>
+          <div class="opt"><span class="label">ب</span> تحول الخلايا الغير متخصصة إلى خلايا ذات وظيفة ومظهر محدد</div>
+          <div class="opt"><span class="label">ج</span> موت الخلايا المبرمج</div>
+          <div class="opt"><span class="label">د</span> اندماج الخلايا</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">66. أي مما يلي يصنف كـ "طفرة صامتة" (silent mutation)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تغيير في القاعدة يؤدي إلى كودون يرمز لنفس الحمض الأميني</div>
+          <div class="opt"><span class="label">ب</span> إدخال يغير إطار القراءة</div>
+          <div class="opt"><span class="label">ج</span> حذف كودون وقف</div>
+          <div class="opt"><span class="label">د</span> تكرار جين كامل</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">67. أيُّ مما يلي يُعدُّ مثالًا على تعديل ما بعد الترجمة يؤثر على نشاط البروتين؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> فسفرة (phosphorylation)</div>
+          <div class="opt"><span class="label">ب</span> splicing</div>
+          <div class="opt"><span class="label">ج</span> تركيب الـ DNA</div>
+          <div class="opt"><span class="label">د</span> تضاعف التيلومير</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">68. أيّ مما يلي يصف بشكل صحيح الفرق بين ترجمة البروتينات في البكتيريا وحقيقيات النوى؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> في البكتيريا الترجمة تتم متزامنة مع النسخ (co-transcriptional)</div>
+          <div class="opt"><span class="label">ب</span> في حقيقيات النوى الترجمة تحدث في النواة</div>
+          <div class="opt"><span class="label">ج</span> في البكتيريا لا توجد tRNA</div>
+          <div class="opt"><span class="label">د</span> لا اختلافات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">69. أي من التالي يصف وظيفة DNA ligase؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> يزيل الـ RNA primers</div>
+          <div class="opt"><span class="label">ب</span> يربط شظايا DNA معًا بواسطة روابط فوسفوديستر</div>
+          <div class="opt"><span class="label">ج</span> يفك الـ DNA المزدوج</div>
+          <div class="opt"><span class="label">د</span> يضيف النوكليوتيدات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">70. أي من التالي يُعدُّ دليلاً على أن النقل الوراثي رأسي (vertical transmission) وليس أفقي؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> انتقال الجينات بين خلايا غير متباعدة وراثيًا</div>
+          <div class="opt"><span class="label">ب</span> انتقال الصفات من الآباء إلى الأبناء عبر الأجيال</div>
+          <div class="opt"><span class="label">ج</span> اقتران البلازميد بين بكتيريا</div>
+          <div class="opt"><span class="label">د</span> انتقال فيروسي لجينات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">71. أي مما يلي هو تعريف الطفرات الجينية (mutagens)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> عوامل تزيد من معدل الطفرات مثل الأشعة أو المواد الكيميائية</div>
+          <div class="opt"><span class="label">ب</span> إنزيمات تضاعف DNA</div>
+          <div class="opt"><span class="label">ج</span> مواقع بدء النسخ</div>
+          <div class="opt"><span class="label">د</span> أجزاء من الريبوسوم</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">72. ماذا يحدث إذا لم يتم تصحيح خطأ في تضاعف الـ DNA قبل الانقسام؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> لا يؤثر على الخلية</div>
+          <div class="opt"><span class="label">ب</span> قد ينتج طفرات مُورِّثة للخلايا الابنة وقد يؤدي للسرطان</div>
+          <div class="opt"><span class="label">ج</span> يتم إيقاف الانقسام نهائيًا دومًا</div>
+          <div class="opt"><span class="label">د</span> تضاعف سريع للـ DNA</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">73. أي من التالي يصف عملية الـ "replication fork"؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> موقع يبدأ فيه النسخ</div>
+          <div class="opt"><span class="label">ب</span> الجزء المتحرك حيث يتم فك تضاعف الـ DNA وتكوينه</div>
+          <div class="opt"><span class="label">ج</span> مكان ترجمة البروتين</div>
+          <div class="opt"><span class="label">د</span> الخيط  RNA الوحيد</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">74. أي من التالي يفسر أهمية "origin of replication" في حقيقيات النوى؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> يحدد نقطة إنهاء النسخ فقط</div>
+          <div class="opt"><span class="label">ب</span> مواقع بدء لتضاعف الـ DNA تُسمح ببدء التضاعف في مناطق متعددة لتسريع العملية</div>
+          <div class="opt"><span class="label">ج</span> يُستخدم فقط في الانقسام الاختزالي</div>
+          <div class="opt"><span class="label">د</span> يعيق التضاعف</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">75. أي مما يلي ليس خطوة في الترجمة (translation)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> بدء (initiation)</div>
+          <div class="opt"><span class="label">ب</span> استطالة (elongation)</div>
+          <div class="opt"><span class="label">ج</span> تضاعف (replication)</div>
+          <div class="opt"><span class="label">د</span> إنهاء (termination)</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">76. الجينات التي تتحكم في دورة الخلية وتمنع التكاثر غير المنضبط تُعرف باسم:</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> oncogenes</div>
+          <div class="opt"><span class="label">ب</span> tumor suppressor genes</div>
+          <div class="opt"><span class="label">ج</span> introns</div>
+          <div class="opt"><span class="label">د</span> promoters</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">77. أي العبارات تشرح بشكل صحيح وجود نسخ متعددة من mRNA ناتجة عن نفس الجين في الخلايا؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> نتيجة لخلل في النسخ فقط</div>
+          <div class="opt"><span class="label">ب</span> ناتجة عن alternative splicing وتعديلات ما بعد النسخ</div>
+          <div class="opt"><span class="label">ج</span> تحدث فقط أثناء الانقسام</div>
+          <div class="opt"><span class="label">د</span> لا تتواجد في الخلايا الحقيقية النوى</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">78. ما الدور الأساسي للـ promoter في جين معين؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> إنهاء النسخ</div>
+          <div class="opt"><span class="label">ب</span> جذب RNA بوليميراز وبدء النسخ</div>
+          <div class="opt"><span class="label">ج</span> ترجمة البروتين</div>
+          <div class="opt"><span class="label">د</span> ربط الـ tRNA</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">79. أي مما يلي يصف دور الـ sigma factor في البكتيريا؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> جزء من الريبوسوم</div>
+          <div class="opt"><span class="label">ب</span> يساعد RNA بوليميراز على التعرف على المشغلات (promoters)</div>
+          <div class="opt"><span class="label">ج</span> ينفّذ proofreading</div>
+          <div class="opt"><span class="label">د</span> يربط الأحماض الأمينية بالـ tRNA</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">80. أي مما يلي يصف مرحلة الـ S؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> مرحلة انقسام الخلايا</div>
+          <div class="opt"><span class="label">ب</span> مرحلة تضاعف الـ DNA</div>
+          <div class="opt"><span class="label">ج</span> طور موت الخلية</div>
+          <div class="opt"><span class="label">د</span> طور انقسام الخلايا الجنسية</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">81. أي من التالي صحيح بالنسبة للـ primase في الخلايا؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> يصنع primers من DNA</div>
+          <div class="opt"><span class="label">ب</span> يصنع primers من RNA</div>
+          <div class="opt"><span class="label">ج</span> يربط الشظايا</div>
+          <div class="opt"><span class="label">د</span> يفك الروابط بين القواعد</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">82. أي مما يلي يصف مفهوم "موت الخلية المبرمج" (apoptosis)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> موت عشوائي للخلية نتيجة إصابة</div>
+          <div class="opt"><span class="label">ب</span> عملية منظمة تؤدي إلى إزالة الخلايا دون التهاب</div>
+          <div class="opt"><span class="label">ج</span> تضاعف للخلايا بسرعة</div>
+          <div class="opt"><span class="label">د</span> تمايز الخلايا</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">83. أي من التالي قد يؤدي إلى توقف الخلية عند نقطة تفتيش G2/M؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> اكتشاف تلف في الـ DNA بعد التضاعف</div>
+          <div class="opt"><span class="label">ب</span> اكتمال تضاعف الـ DNA بشكل سليم</div>
+          <div class="opt"><span class="label">ج</span> انخفاض مستويات ATP</div>
+          <div class="opt"><span class="label">د</span> ضعف نشاط الهيستونات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">84. أي من التالي صحيح عن تراكيب الـ spindle أثناء الانقسام؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تتكوّن من أنابيب بروتينية تعرف بالأنيبيبات الدقيقة (microtubules)</div>
+          <div class="opt"><span class="label">ب</span> تتكوّن من DNA</div>
+          <div class="opt"><span class="label">ج</span> تتكوّن من RNA</div>
+          <div class="opt"><span class="label">د</span> لا تتواجد في الخلايا حقيقية النوى</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">85. أي مما يلي يصف دور البروتين p53 بشكل دقيق؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> يعزز تقدم الخلية بغض النظر عن تلف الـ DNA</div>
+          <div class="opt"><span class="label">ب</span> ينشط آليات إصلاح الـ DNA أو يُدخل الخلية في apoptosis عند الضرورة</div>
+          <div class="opt"><span class="label">ج</span> يضيف التيلومير</div>
+          <div class="opt"><span class="label">د</span> يربط الأحماض الأمينية بالـ tRNA</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">86. أي مما يلي يصف دور Pol II (RNA polymerase II)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تضاعف الـ DNA</div>
+          <div class="opt"><span class="label">ب</span> نسخ mRNA في حقيقيات النوى</div>
+          <div class="opt"><span class="label">ج</span> ترجمة البروتين</div>
+          <div class="opt"><span class="label">د</span> إزالة الإنترونات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">87. ما الذي يحدد نقطة البداية في النسخ في البكتيريا؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> المحفز (promoter) الذي يتعرف عليه عامل sigma</div>
+          <div class="opt"><span class="label">ب</span> غطاء 5' (5' cap)</div>
+          <div class="opt"><span class="label">ج</span> تيلوميراز</div>
+          <div class="opt"><span class="label">د</span> مختزل NADH</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">88. أي مما يلي يصنف كطفرة جينية تؤثر على بنية البروتين الناتج (غير صامتة)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> طفرة صامتة</div>
+          <div class="opt"><span class="label">ب</span> طفرة استبدال تسبب تغيّر حمض أميني</div>
+          <div class="opt"><span class="label">ج</span> طفرة لا تؤثر</div>
+          <div class="opt"><span class="label">د</span> طفرة في التيلومير فقط</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">89. ما الذي يضمن أن الكود الجيني "غير متداخل" (non-overlapping)؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> كل نيوكليوتيد جزء من كودون واحد فقط</div>
+          <div class="opt"><span class="label">ب</span> كل نيوكليوتيد جزء من عدة كودونات</div>
+          <div class="opt"><span class="label">ج</span> الكودون لا يحدد الحمض الأميني</div>
+          <div class="opt"><span class="label">د</span> الكودون يتغير خلال الترجمة</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">90. أي من التالي يُستخدم للكشف عن تضاعف الـ DNA في المختبر بسرعة؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> PCR (تفاعل البوليميراز المتسلسل)</div>
+          <div class="opt"><span class="label">ب</span> Western blot</div>
+          <div class="opt"><span class="label">ج</span> ELISA</div>
+          <div class="opt"><span class="label">د</span> تلوين هيستولوجي</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">91. أي مما يلي يصف أفضل دور الـ origin recognition complex في حقيقيات النوى؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> إنهاء الترجمة</div>
+          <div class="opt"><span class="label">ب</span> تمييز مواقع بداية التضاعف وتجنيد عوامل التضاعف</div>
+          <div class="opt"><span class="label">ج</span> طي البروتين</div>
+          <div class="opt"><span class="label">د</span> إضافة 5' cap</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">92. أي مما يلي يصف "replication licensing"؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> آلية تمنع التضاعف أكثر من مرة في نفس دورة الخلية عن طريق التحكم بعوامل بدء التضاعف</div>
+          <div class="opt"><span class="label">ب</span> تسمية البروتينات لطيها</div>
+          <div class="opt"><span class="label">ج</span> طريقة لزيادة التيلوميرات</div>
+          <div class="opt"><span class="label">د</span> فصل الكروماتيدات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">93. أي مما يلي يدخل في تركيب النيوكليوتيد؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> سكر + قاعدة نيتروجينية + مجموعة فوسفات</div>
+          <div class="opt"><span class="label">ب</span> أحماض أمينية فقط</div>
+          <div class="opt"><span class="label">ج</span> دهون وسكريات فقط</div>
+          <div class="opt"><span class="label">د</span> بلازما</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">94. ما وظيفة الـ exonuclease في نشاط الـ DNA polymerase؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تركيب النيوكليوتيدات</div>
+          <div class="opt"><span class="label">ب</span> إزالة النيوكليوتيدات من أحد الأطراف كجزء من التصحيح</div>
+          <div class="opt"><span class="label">ج</span> ربط الأحماض الأمينية</div>
+          <div class="opt"><span class="label">د</span> تضاعف التيلوميرات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">95. أي من التالي يصف أفضل علاقة بين الجين والكروموسوم؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> الجين هو قطعة من الـ DNA تقع على كروموسوم محدد</div>
+          <div class="opt"><span class="label">ب</span> الكروموسوم هو قطعة من الجين</div>
+          <div class="opt"><span class="label">ج</span> لا علاقة بينهما</div>
+          <div class="opt"><span class="label">د</span> الجين عبارة عن بروتين</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">96. أي مما يلي يصف جيدًا آلية عمل الأنيبيبات الدقيقة (microtubules) خلال الانقسام؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تولّد قوى تسحب الكروماتيدات نحو الأقطاب عبر تحلل توبولين</div>
+          <div class="opt"><span class="label">ب</span> تعمل كموقع لتركيب الـ DNA</div>
+          <div class="opt"><span class="label">ج</span> تُستخدم في تصنيع الـ mRNA</div>
+          <div class="opt"><span class="label">د</span> تُكوِّن الغشاء النووي</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">97. أي مما يلي يصف سبب وجود عدة أنواع من RNA polymerases في حقيقيات النوى؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> كل واحد مسؤول عن نوع مختلف من RNA (مثل mRNA, tRNA, rRNA)</div>
+          <div class="opt"><span class="label">ب</span> جميعها تقوم بنفس الوظيفة بالتبادل</div>
+          <div class="opt"><span class="label">ج</span> بعضها فقط في البكتيريا</div>
+          <div class="opt"><span class="label">د</span> لا توجد فروق بينها</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">98. أي مما يلي ليس من مكونات نظام مراقبة السرطان (cancer surveillance) الخلوية؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> p53</div>
+          <div class="opt"><span class="label">ب</span> جهاز إصلاح الـ DNA</div>
+          <div class="opt"><span class="label">ج</span> آليات الانقسام غير المنضبط</div>
+          <div class="opt"><span class="label">د</span> آليات موت الخلية المبرمج</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">99. أي من التالي هو نتيجة محتملة لعدم الفصل الصحيح للكروموسومات أثناء الميوزيس؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> خلايا ابنة بصيغة صبغية طبيعية</div>
+          <div class="opt"><span class="label">ب</span> أمثلة من خلل التوزيع مثل متلازمة داون (نقص/زيادة في عدد الكروموسومات)</div>
+          <div class="opt"><span class="label">ج</span> زيادة في التعبير الجيني الطبيعي فقط</div>
+          <div class="opt"><span class="label">د</span> تضاعف التيلوميرات</div>
+        </div>
+      </li>
+
+      <li class="q">
+        <div class="qtext">100. أي من التالي يصف بشكل ملائم العلاقة بين النسخ والترجمة في حقيقيات النوى؟</div>
+        <div class="opts">
+          <div class="opt"><span class="label">أ</span> تحدث الترجمة داخل النواة فورًا بعد النسخ</div>
+          <div class="opt"><span class="label">ب</span> يحدث فصل مكاني وزمني: النسخ في النواة، الترجمة في السيتوبلازم بعد معالجة الـ mRNA</div>
+          <div class="opt"><span class="label">ج</span> الترجمة تحدث في نفس الوقت ومكان النسخ دائمًا</div>
+          <div class="opt"><span class="label">د</span> لا تحدث الترجمة في الخلايا حقيقية النوى</div>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</body>
+</html>
